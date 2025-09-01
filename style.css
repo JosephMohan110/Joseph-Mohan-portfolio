@@ -518,7 +518,7 @@ body {
       /* Responsive width on small screens but keep horizontal scroll */
       @media screen and (max-width: 768px) {
         .certificate-card { width: 260px; }
-      }  
+      }
 
       /* Fullscreen overlay */
       .overlay {
