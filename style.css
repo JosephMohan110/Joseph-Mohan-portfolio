@@ -38,7 +38,7 @@ body {
       }
       nav a:hover { color: #ff9800; }
 
-             Responsive adjustments 
+          /*   Responsive adjustments */
       @media screen and (max-width: 768px) {
         nav {
           flex-direction: column;
