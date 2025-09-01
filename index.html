@@ -48,7 +48,7 @@
       }
       nav a:hover { color: #ff9800; }
 
-            /* Responsive adjustments */
+            /* Responsive adjustments 
       @media screen and (max-width: 768px) {
         nav {
           flex-direction: column;
@@ -63,7 +63,7 @@
       .hero-content h1 { font-size: 36px; }
       .hero-content p { font-size: 16px; }
       .btn { font-size: 14px; padding: 10px 16px; }
-       }
+       }   */
 
 
       /* Hero Section */
@@ -129,7 +129,7 @@
         background: #e68900;
       }
 
-      /* Responsive adjustments */
+      /* Responsive adjustments 
       @media screen and (max-width: 768px) {
       .hero-bg-text h1 {
         font-size: 60px;
@@ -147,7 +147,7 @@
         font-size: 16px;
         padding: 10px 20px;
       }
-      }
+      }  */
 
 
      /* About */
@@ -525,10 +525,10 @@
         color: #005bb5;
       }
 
-      /* Responsive width on small screens but keep horizontal scroll */
+      /* Responsive width on small screens but keep horizontal scroll 
       @media screen and (max-width: 768px) {
         .certificate-card { width: 260px; }
-      }
+      }  */
 
       /* Fullscreen overlay */
       .overlay {
@@ -631,6 +631,160 @@
         background: #222;
         color: white;
       }
+
+      
+
+
+
+      /* =================== RESPONSIVE STYLES =================== */
+
+      /* Tablet View */
+      @media screen and (max-width: 1024px) {
+        /* Navbar */
+        nav {
+          flex-direction: column;
+          padding: 10px 20px;
+        }
+        nav div { margin-top: 10px; flex-wrap: wrap; justify-content: center; }
+        nav a { margin: 5px 10px; }
+
+        /* Hero */
+        .hero-content h1 { font-size: 50px; }
+        .hero-content p { font-size: 20px; }
+        .btn { font-size: 16px; padding: 10px 20px; }
+
+        /* About */
+        #about img { width: 250px; }
+        #about div { max-width: 400px; }
+
+        /* Timeline */
+        .timeline::after { left: 50%; }
+        .entry { width: 50%; }
+        .left::before, .right::before { left: auto; right: -12px; }
+
+        /* Skills */
+        #skills h2 { font-size: 28px; }
+
+        /* Projects */
+        .projects-wrapper { padding: 20px; }
+        .project-card { min-width: 250px; max-width: 270px; height: 200px; }
+
+        /* Certificates */
+        .certificates-wrapper { padding: 30px 15px; }
+        .certificates-wrapper h2 { font-size: 32px; }
+        .certificate-card { width: 300px; }
+        .certificate-card img { height: 220px; }
+
+        /* Contact */
+        #contact h2 { font-size: 28px; }
+        form input, form textarea, button { font-size: 14px; padding: 10px; }
+
+        /* Footer */
+        footer { font-size: 14px; }
+      }
+
+      /* Mobile View */
+      @media screen and (max-width: 768px) {
+        /* Navbar */
+        nav div { justify-content: center; flex-wrap: wrap; }
+        nav a { margin: 5px 8px; font-size: 14px; }
+
+        /* Hero */
+        .hero-content h1 { font-size: 40px; }
+        .hero-content p { font-size: 18px; }
+        .btn { font-size: 14px; padding: 8px 16px; }
+
+        /* About */
+        #about { padding: 60px 5%; }
+        #about img { width: 200px; }
+        #about div { max-width: 300px; }
+        #about h2 { font-size: 24px; }
+
+        /* Timeline */
+        .timeline::after { left: 50%; }
+        .entry { width: 100%; padding-left: 50px; }
+        .left, .right { left: 0; }
+        .left::before, .right::before { left: 18px; }
+
+        /* Skills */
+        #skills { padding: 60px 5%; }
+        #skills h2 { font-size: 24px; }
+
+        /* Projects */
+        .projects-wrapper { padding: 15px; }
+        .projects-container { gap: 15px; }
+        .project-card { min-width: 220px; max-width: 240px; height: 180px; }
+
+        /* Certificates */
+        .certificates-wrapper { padding: 25px 10px; }
+        .certificates-wrapper h2 { font-size: 28px; margin-bottom: 25px; }
+        .certificate-card { width: 250px; padding-bottom: 15px; }
+        .certificate-card img { height: 180px; }
+
+        /* Contact */
+        #contact { padding: 20px 5%; }
+        #contact h2 { font-size: 24px; }
+        form input, form textarea, button { font-size: 14px; padding: 10px; }
+
+        /* Footer */
+        footer { font-size: 13px; }
+      }
+
+      /* Small Mobile View */
+      @media screen and (max-width: 480px) {
+        /* Navbar */
+        nav div { flex-direction: column; }
+        nav a { margin: 3px 0; font-size: 12px; }
+
+        /* Hero */
+        .hero-content h1 { font-size: 32px; }
+        .hero-content p { font-size: 16px; }
+        .btn { font-size: 12px; padding: 6px 12px; }
+
+        /* About */
+        #about img { width: 150px; }
+        #about div { max-width: 250px; }
+        #about h2 { font-size: 20px; }
+
+        /* Timeline */
+        .entry { padding-left: 40px; }
+        .left::before, .right::before { left: 15px; }
+
+        /* Skills */
+        #skills { padding: 40px 5%; }
+        #skills h2 { font-size: 20px; }
+
+        /* Projects */
+        .projects-wrapper { padding: 10px; }
+        .projects-container { gap: 12px; }
+        .project-card { min-width: 180px; max-width: 200px; height: 160px; }
+
+        /* Certificates */
+        .certificates-wrapper { padding: 20px 8px; }
+        .certificates-wrapper h2 { font-size: 24px; }
+        .certificate-card { width: 200px; padding-bottom: 12px; }
+        .certificate-card img { height: 150px; }
+
+        /* Contact */
+        #contact h2 { font-size: 20px; }
+        form input, form textarea, button { font-size: 12px; padding: 8px; }
+
+        /* Footer */
+        footer { font-size: 12px; }
+      }
+
+      /* Horizontal scroll for Projects & Certificates */
+      .projects-container, .certificates-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 20px;
+        padding: 10px 0;
+      }
+      .projects-container::-webkit-scrollbar, .certificates-container::-webkit-scrollbar { display: none; }
+      .projects-container, .certificates-container { -ms-overflow-style: none; scrollbar-width: none; }
+
 
 
     </style>
