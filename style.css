@@ -38,7 +38,7 @@ body {
       }
       nav a:hover { color: #ff9800; }
 
-            /* Responsive adjustments 
+             Responsive adjustments 
       @media screen and (max-width: 768px) {
         nav {
           flex-direction: column;
@@ -53,7 +53,7 @@ body {
       .hero-content h1 { font-size: 36px; }
       .hero-content p { font-size: 16px; }
       .btn { font-size: 14px; padding: 10px 16px; }
-       }   */
+       }   
 
 
       /* Hero Section */
@@ -119,7 +119,7 @@ body {
         background: #e68900;
       }
 
-      /* Responsive adjustments 
+      /* Responsive adjustments */
       @media screen and (max-width: 768px) {
       .hero-bg-text h1 {
         font-size: 60px;
@@ -137,7 +137,7 @@ body {
         font-size: 16px;
         padding: 10px 20px;
       }
-      }  */
+      }  
 
 
      /* About */
@@ -515,10 +515,10 @@ body {
         color: #005bb5;
       }
 
-      /* Responsive width on small screens but keep horizontal scroll 
+      /* Responsive width on small screens but keep horizontal scroll */
       @media screen and (max-width: 768px) {
         .certificate-card { width: 260px; }
-      }  */
+      }  
 
       /* Fullscreen overlay */
       .overlay {
@@ -621,3 +621,9 @@ body {
         background: #222;
         color: white;
       }
+
+
+
+
+
+    
