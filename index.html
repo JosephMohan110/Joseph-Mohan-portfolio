@@ -730,72 +730,111 @@
 
 
 
-      /* ========================= RESPONSIVE STYLES FOR NAV ABOUT TIMELINE ========================= */
+    /* ========================= TIMELINE / INTERNSHIP RESPONSIVE ========================= */
+
+      /* Tablets (max-width: 1024px) */
+      @media screen and (max-width: 1024px) {
+        .timeline {
+          padding: 60px 20px;
+          gap: 35px;
+        }
+
+        .timeline-item {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+        }
+
+        .timeline-item .timeline-date {
+          width: 100%;
+          font-size: 1rem;
+          margin-bottom: 8px;
+        }
+
+        .timeline-item .timeline-content {
+          font-size: 0.95rem;
+        }
+      }
+
+      /* Mobile (max-width: 768px) */
+      @media screen and (max-width: 768px) {
+        .timeline {
+          padding: 50px 15px;
+          gap: 25px;
+        }
+
+        .timeline-item .timeline-date {
+          font-size: 0.95rem;
+        }
+
+        .timeline-item .timeline-content {
+          font-size: 0.9rem;
+        }
+      }
+
+      /* Small Mobile (max-width: 480px) */
+      @media screen and (max-width: 480px) {
+        .timeline {
+          padding: 40px 10px;
+          gap: 20px;
+        }
+
+        .timeline-item {
+          gap: 10px;
+        }
+
+        .timeline-item .timeline-date {
+          font-size: 0.85rem;
+        }
+
+        .timeline-item .timeline-content {
+          font-size: 0.8rem;
+        }
+      }
+
+        /* ========================= ABOUT SECTION RESPONSIVE ========================= */
 
         /* Tablets (max-width: 1024px) */
         @media screen and (max-width: 1024px) {
-          /* Hero */
-          .hero {
-            padding: 80px 20px;
-            text-align: center;
-          }
-
-          .hero h1 {
-            font-size: 2.5rem;
-          }
-
-          .hero p {
-            font-size: 1.1rem;
-          }
-
-          /* About */
           .about {
             flex-direction: column;
             align-items: center;
             text-align: center;
             gap: 30px;
+            padding: 60px 20px;
           }
 
           .about img {
             max-width: 300px;
+            width: 100%;
             margin-bottom: 20px;
           }
 
-          /* Timeline */
-          .timeline-item {
-            flex-direction: column;
-            align-items: flex-start;
+          .about .about-text {
+            max-width: 700px;
           }
 
-          .timeline-item .timeline-date {
-            width: 100%;
-            margin-bottom: 10px;
+          .about h2 {
+            font-size: 1.8rem;
           }
 
-          /* Nav */
-          nav {
-            flex-wrap: wrap;
-            padding: 15px 20px;
-          }
-
-          nav ul {
-            flex-wrap: wrap;
-            gap: 20px;
+          .about p {
+            font-size: 1rem;
+            line-height: 1.6;
           }
         }
 
         /* Mobile (max-width: 768px) */
         @media screen and (max-width: 768px) {
-          /* Hero */
-          .hero h1 {
-            font-size: 2rem;
+          .about {
+            gap: 25px;
+            padding: 50px 15px;
           }
 
-          .hero p {
-            font-size: 1rem;
+          .about img {
+            max-width: 250px;
           }
 
-          /* About */
           .about h2 {
             font-size: 1.5rem;
           }
@@ -803,34 +842,17 @@
           .about p {
             font-size: 0.95rem;
           }
-
-          /* Timeline */
-          .timeline {
-            padding: 50px 15px;
-            gap: 20px;
-          }
-
-          /* Nav */
-          nav ul {
-            flex-direction: column;
-            gap: 10px;
-          }
         }
 
         /* Small Mobile (max-width: 480px) */
         @media screen and (max-width: 480px) {
-          /* Hero */
-          .hero h1 {
-            font-size: 1.5rem;
+          .about {
+            gap: 20px;
+            padding: 40px 10px;
           }
 
-          .hero p {
-            font-size: 0.9rem;
-          }
-
-          /* About */
           .about img {
-            max-width: 200px;
+            max-width: 180px;
           }
 
           .about h2 {
@@ -840,18 +862,144 @@
           .about p {
             font-size: 0.85rem;
           }
+        }
 
-          /* Timeline */
-          .timeline-item {
-            gap: 15px;
+        /* ========================= HERO SECTION RESPONSIVE ========================= */
+
+        /* Tablets (max-width: 1024px) */
+        @media screen and (max-width: 1024px) {
+          .hero {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+            gap: 20px;
           }
 
-          /* Nav */
-          nav ul {
-            gap: 8px;
+          .hero h1 {
+            font-size: 2.5rem;
+          }
+
+          .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+          }
+
+          .hero img {
+            max-width: 350px;
+            width: 100%;
           }
         }
 
+        /* Mobile (max-width: 768px) */
+        @media screen and (max-width: 768px) {
+          .hero {
+            padding: 60px 15px;
+            gap: 15px;
+          }
+
+          .hero h1 {
+            font-size: 2rem;
+          }
+
+          .hero p {
+            font-size: 1rem;
+            max-width: 500px;
+          }
+
+          .hero img {
+            max-width: 280px;
+          }
+        }
+
+        /* Small Mobile (max-width: 480px) */
+        @media screen and (max-width: 480px) {
+          .hero {
+            padding: 50px 10px;
+            gap: 12px;
+          }
+
+          .hero h1 {
+            font-size: 1.5rem;
+          }
+
+          .hero p {
+            font-size: 0.9rem;
+            max-width: 100%;
+          }
+
+          .hero img {
+            max-width: 200px;
+          }
+        }
+
+              /* ========================= NAV / TOP BAR RESPONSIVE ========================= */
+
+      /* Tablets (max-width: 1024px) */
+      @media screen and (max-width: 1024px) {
+        nav {
+          padding: 15px 20px;
+          flex-wrap: wrap;
+        }
+
+        nav .nav-logo {
+          font-size: 1.5rem;
+        }
+
+        nav ul {
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+
+        nav ul li a {
+          font-size: 1rem;
+        }
+      }
+
+      /* Mobile (max-width: 768px) */
+      @media screen and (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 15px;
+          gap: 10px;
+        }
+
+        nav .nav-logo {
+          font-size: 1.3rem;
+          margin-bottom: 10px;
+        }
+
+        nav ul {
+          flex-direction: column;
+          gap: 12px;
+          width: 100%;
+        }
+
+        nav ul li a {
+          font-size: 0.95rem;
+        }
+      }
+
+      /* Small Mobile (max-width: 480px) */
+      @media screen and (max-width: 480px) {
+        nav {
+          padding: 10px;
+          gap: 8px;
+        }
+
+        nav .nav-logo {
+          font-size: 1.1rem;
+        }
+
+        nav ul {
+          gap: 8px;
+        }
+
+        nav ul li a {
+          font-size: 0.85rem;
+        }
+      }
 
     </style>
 
