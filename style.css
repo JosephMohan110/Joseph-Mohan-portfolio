@@ -42,7 +42,7 @@ body {
       @media screen and (max-width: 768px) {
         nav {
           flex-direction: column;
-          padding: 10px 20px;
+          padding: 10px 15px;
         }
         nav div {
           margin-top: 10px;
@@ -50,9 +50,6 @@ body {
           flex-wrap: wrap;
           justify-content: center;
         }
-      .hero-content h1 { font-size: 36px; }
-      .hero-content p { font-size: 16px; }
-      .btn { font-size: 14px; padding: 10px 16px; }
        }   
 
 
@@ -64,7 +61,7 @@ body {
         justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;
+        overflow-x: hidden;
         text-align: center;
         color: rgb(140, 135, 135);
       }
@@ -120,7 +117,13 @@ body {
       }
 
       /* Responsive adjustments */
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 768px){
+        /* .hero {
+          display: flex;
+          width: 100%;
+        } */
+      
+       
       .hero-bg-text h1 {
         font-size: 60px;
       }
@@ -203,12 +206,15 @@ body {
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       }
-      /* @media screen and (max-width: 768px) {
+       @media screen and (max-width: 768px){
+        
+        
+        
         .timeline::after { left: 0px; }
         .entry { width: 100%; padding-left: 50px; }
         .right { left: 0; }
         .left::before, .right::before { left: 18px; }
-      }   */
+      }   
 
 
       /* Skills */
